@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--preconect-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!--meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <!--styles-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!--scripts-->
+    <script src="./js/script.js" defer type="module"></script> <!--agora com o module o js vai aceitar o ES6 modules-->
+</head>
+<body>
+    <div class="alert-error">
+        Digite somente números
+    </div>
+
+    <div class="container">
+
+        <main class="card">
+
+            <form action="">
+
+                <h1 class="title">Cáuculo de IMC</h1>
+
+                <div class="inputWrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input id="weight" type="text" placeholder="60">
+                </div>
+
+                <div class="inputWrapper">
+                    <label for="height">Altura (m)</label>
+                    <input id="height" type="text" placeholder="165">
+                </div>
+
+                <button type="submit">Caucular IMC
+                    <img src="assets/seta.svg" alt="seta">
+                </button>
+
+            </form>
+
+        </main>
+
+    </div>
+    
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">12
+                <span>Seu imc</span>
+                <button class="close">
+                    <img src="./assets/closed.svg" alt="fechar">
+                </button>
+            </h2>
+
+            
+        </div>
+    </div>
+</body>
+
+</html>
